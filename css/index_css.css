@@ -1,0 +1,300 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar {
+    background-color: black!important;
+}
+
+.navbar ul li{
+    padding: 10px 0px 10px 30px;
+}
+.navbar ul li a{
+    position: relative;
+    
+}
+
+.navbar ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:first-child a::before{
+    width: 60%;
+    
+}
+
+.navbar ul li:hover a::before{
+    width: 60%;
+}
+
+/* .last-icon i{
+    line-height: 23px;
+} */
+
+
+.home .img-overlay{
+    background:  -webkit-linear-gradient(rgba(0,0,0,0.5) , rgba(0, 0, 0, 0.5)), url(../images/intro-bg.jpg)  ;  
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.arrow{
+    z-index: 3;
+}
+
+.arrow i{
+    color: white;
+    z-index: 3;
+}
+
+/* ----------animation-------------- */
+.home .img-overlay .row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.img-overlay .h{
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    
+}
+
+.anim1 p::after{
+    content: " ";
+    font-size: 2.5rem;
+    animation: anim_1 7s ease-in-out 0s infinite ;
+   
+}
+
+@keyframes anim_1 {
+
+    
+    0%{content:"D|"}
+    3%{content:"De|"}
+    6%{content:"Des|"}
+    9%{content:"Desi|"}
+    12%{content:"Desig|"}
+    15%{content:"Design|"}
+    18%{content:"Designe|"}
+    19%{content:"Designer|"} 
+
+    21%{content:"D|"}
+    24%{content:"De|"}
+    27%{content:"Dev|"}
+    30%{content:"Deve|"}
+    33%{content:"Devel|"}
+    36%{content:"Develo|"}
+    39%{content:"Develop|"}
+    42%{content:"Develope|"}
+    43%{content:"Developer|"}
+   
+    
+    45%{content:"f|"}
+    48%{content:"fr|"}
+    51%{content:"fre|"}
+    54%{content:"free|"}
+    57%{content:"freel|"}
+    60%{content:"freela|"}
+    61%{content:"freelan|"}
+    64%{content:"freelanc|"}
+    67%{content:"freelance|"}
+    68%{content:"freelancer|"}
+    
+    
+    70%{content:"p|"}
+    73%{content:"ph|"}
+    76%{content:"pho|"}
+    79%{content:"phot|"}
+    82%{content:"photo|"}
+    85%{content:"photog|"}
+    88%{content:"photogr|"}
+    91%{content:"photogra|"}
+    94%{content:"photograp|"}
+    97%{content:"photograph|"}
+    99%{content:"photographe|"}
+    100%{content:"photographer|"}
+
+    
+}
+
+/* -------------------------------- */
+
+/*--------------about---------- */
+
+
+.about,
+.services,
+.counters,
+.portfolio,
+.feed{
+    background-color: #f5f5f5;
+}
+
+
+.about h5::before{
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 0px;
+    background-color: #0078ff;
+    width: 15%;
+    height: 3px;
+}
+
+/*-------------- services--------- */
+
+
+.services .icon i{
+   
+    border: 0.75rem solid #0d6efd;
+    transition: border-color 0.5s , color 0.5s , background-color 0.5s ;
+}
+ 
+.services .box:hover i{
+    border-color:#CDE1F8;
+    color: white;
+    background-color:#0d6efd
+}
+
+
+
+/*-------------- counter---------- */
+
+
+.counters{
+    background:  -webkit-linear-gradient(rgba(0,122,255,0.5) , rgba(0, 122, 255, 0.4)), url(../images/counters-bg.jpg)  ;
+
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* box-shadow: 0 0 0 10px #cde1f8; */
+
+.counters i{
+    border: 0.5rem solid #CDE1F8;
+    color: white;
+}
+    
+
+/*-------------- portfolio---------- */
+.port-txt::after{
+    content: "";
+    position: absolute;
+    bottom: -280%;
+    left: 48%;
+    background-color: #0078ff;
+    width: 5%;
+    height: 5px;
+    margin-bottom: 50px;
+}
+
+.portfolio .box img{
+    overflow: hidden;
+    transition: transform 1s ;
+}
+
+.portfolio .box:hover img{
+    transform:scale(1.5);
+}
+
+
+
+
+/*--------------feed---------- */
+
+
+.feed,
+.contact{
+    background:  -webkit-linear-gradient(rgba(0,122,255,0.5) , rgba(0, 122, 255, 0.7)), url(../images/overlay-bg.jpg)  ;
+
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-indicators button{
+    background-color: white!important;
+    width: 15px!important; 
+    height: 15px!important;
+
+}
+
+.carousel-indicators,
+.carousel-caption{
+    position: static;
+}
+
+/* ---------------blog-------------- */
+
+.blog .card-body a h5,
+.blog .card-footer a{
+    color: black;
+    transition: color 0.5s ;
+}
+
+.blog .card-body a:hover h5,
+.blog .card-footer a:hover {
+    color: #0078ff ;
+}
+
+
+.blog .card-footer img{
+    width: 12%;
+}
+
+.blog .card-body .word{
+   font-size:  0.85rem;
+    background-color:#66B0EA ;
+    padding: 0.2rem 0.75rem;
+    border-radius: 3px;
+}
+
+
+/* --------------form----------------- */
+
+form .butn{
+    width: fit-content;
+}
+
+.contact h5::before{
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: 0px;
+    background-color: #0078ff;
+    width: 15%;
+    height: 3px;
+}
+
+
+.fa-ul{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+  
+}
+
+.contact .icon i{
+   
+    border: 0.2rem solid #0d6efd;
+    transition: border-color 0.5s , color 0.5s , background-color 0.5s ;
+}
+ 
+.contact a:hover i{
+    border-color:#CDE1F8;
+    color: white;
+    background-color:#0d6efd
+}
+
+footer{
+    background-color: #0062D3;
+}
